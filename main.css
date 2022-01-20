@@ -8,61 +8,198 @@ html{
 body{
 
     width: 1024px;
-    height: 200px;
-
-
+    height: 600px; 
 
     margin: auto;
 }
 
 header{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
 
+    justify-items: start;
     width: 1024px;
-    height: 66px;
-
+    height: 72px;
     background-color: blueviolet;
-    
 }
 
 header > h1{
     width: 300px;
-    height: 66px;
+  /*  line-height: 50px; */
     background-color: cornflowerblue;
+    border-style: solid;
     float: left;
-    margin-top: 0px;
-
-
+    padding-bottom: 15px;
+    padding-top: 14px;
+    padding-left: 15px;
+    margin: 0px;
+   
 }
-
 
 a {
     text-decoration:none;
+    margin-left: auto;
  }
 
+ header > nav > ul {
+     margin-top: 0px;
+     margin-left: 0px;
+     padding-left: 0px;
+ }
 
-header > ul > li{
+header > nav > ul > li{
     list-style-type: none;
     text-align: center;
-
+margin-right: auto;
     float:left;
-    margin-left: 20px;
+    margin-left: 0px;
     height: 40px;
     width: 120px;
     background-color: chartreuse;
+    border-style: solid;
     padding-top: 26px;
-
 }
 
-
-
-header > p > a{
-    height: 66px;
+header > a{
+    list-style-type: none;
+    text-align: center;
+    height: 40px;
     width: 120px;
     background-color: chocolate;
+    border-style: solid;
     float: right;
+    padding-top: 26px;
 }
 
 .main{
+    width: 787px;
+    height: 600px;
+    background-color: khaki;
+    border-style: solid;
+    margin-top: 0px;
 
     
+}
+
+.main > h2{
+    width: 250px;
+    height: 40px;
+    background-color: lightskyblue;
+    border-style: solid;
+    margin: 15px;
+    float: left;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.main > p{
+
+   
+    height: 80px;
+    
+    background-color: lightskyblue;
+    border-style: solid;
+    margin-top: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
+    
+    float: left;
+    padding: 10px;
+}
+
+.main > article{
+
+    width: 345px;
+    height: 345px;
+    background-color: coral;
+    border-style: solid;
+    margin-top: 1px;
+    margin-left: 15px;
+    margin-right: 0px;
+    margin-bottom: 15px;
+    float: left;
+    padding: 10px;
+
+}
+
+aside{
+    width: 222px;
+    height: 596px;
+    background-color: darkseagreen;
+    border-style: solid;
+    margin-top: -606px;
+    margin-left: 791px;
+    padding-left: 5px;
+    padding-top: 5px;
+    float: right;
+    position: absolute;
+    z-index: 1;
+}   
+
+aside > h4{
+    float: left;
+    margin: 3px;
+    height: 500px;
+    padding: 29px;
+    background-color: thistle;
+    border-style: solid;
+    position: absolute;
+    z-index: 2;
+
+}
+
+aside > ul{
+    z-index: 3;
+    position: absolute;
+    margin-top: 60px;
+    font-size: 13px;
+  
+}
+
+
+.login{
+    position: relative;
+    margin-top: 0px;
+    height: 500px;
+    background-color: darkgray;
+    padding: 100px;
+}
+
+.login > h2{
+    border-style: solid;
+    float: left;
+    text-transform: uppercase;
+    width: 350px;
+    background-color: rgb(209, 0, 0);
+    text-align: center;
+    padding: 20px;
+}
+
+.login > form{
+    float: left;
+    border-style: solid;
+    border-radius: 10px;
+    width: 500px;
+    background-color: darkturquoise;
+    text-align: center;
+    padding: 150px;
+}
+
+.login > form > button{
+    border-radius: 6px;
+    background-color: yellow;
+}
+
+.login > form > input[type = submit] {
+    border-radius: 6px;
+    background-color: yellow;
+}
+
+footer{
+    width: 1024px;
+    height: 66px;
+    background-color: darkgoldenrod;
+    text-align: center;
+    padding-top: 10px;   
 }
